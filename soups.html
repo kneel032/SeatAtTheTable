@@ -28,7 +28,6 @@
             background-color: rgb(120, 97, 77);
             text-align: center;
             padding: 0.1px;
-            margin-top: 550px;
         }
         .topnav {
             background-color: rgb(212, 71, 32);
@@ -62,11 +61,28 @@
         a:visited {
             color: rgb(172, 202, 178);
         }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 325px;
+        }
+
+        .container a {
+            background-color: rgb(120, 97, 77);
+            padding: 50px;
+            text-align: center;
+            color: rgb(172, 202, 178)
+        }
     </style>
 
     <header class="site-header">
         <h1>A Seat At The Table</h1>
-        <h2> Recipes </h2>
+        <h2> Soups </h2>
     </header>
 
 
@@ -79,7 +95,14 @@
         </ul>
     </div>
 
-    <p>Soup!</p>
+    <div class ="container">
+        <a href="broths.html">Broth & Stock</a>
+        <a>With Vegetables (Coming Soon!)</a>
+        <a>With Fish (Coming Soon!)</a>
+        <a>With Bird (Coming Soon!)</a>
+        <!-- <a>[Space]</a> -->
+        <!-- <a>[Space]</a> -->
+    </div>
 
     <footer>
         <p>2026</p>
